@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: rgb(64, 61, 58);
+  background-image: linear-gradient(to top left, #063540 0%, #2a7a8c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  padding: 2rem;
+  width: 100rem;
+  height: 50rem;
+  background-color: rgb(230, 217, 207);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  text-align: center;
+}
+.heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.paragraph {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.button {
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 4rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.button:active {
+  transform: translate(0, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.input-form {
+  width: fit-content;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type='number'],
+input[type='password'] {
+  font-family: inherit;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-style: none;
+  font-size: 2rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 20rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+@keyframes cssload-slide {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#cssload-wrapper {
+  height: 4rem;
+  width: 75%;
+  background: rgb(64, 61, 58);
+  border-radius: 2em;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#cssload-line {
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(23, 98, 115);
+  border-radius: 2em;
+  animation: cssload-slide 21.5s;
+}
+
+.screen2 {
+  padding-top: 10rem;
+}
+
+.screen3 {
+  padding-top: 15rem;
+}
+
+.hidden {
+  display: none;
+}

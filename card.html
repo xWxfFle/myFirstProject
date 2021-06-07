@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>not fake card checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="screen1">
+        <h1 class="heading">
+          Is your credit card number in a hacker’s database?
+        </h1>
+        <p class="paragraph">
+          You can easily find out now! All you need to do is enter its
+          information here and we will scan thousands of haker databases to see
+          if any they have match yours.
+        </p>
+        <form>
+          <div class="input-form">
+            <input
+              type="number"
+              id="number"
+              placeholder="Credit card number"
+            /><br />
+            <input
+              type="number"
+              id="exp-date"
+              placeholder="Expiration date"
+            /><br />
+            <input
+              type="password"
+              id="zip-code"
+              placeholder="Your zip code"
+              maxlength="3"
+              minlength="3"
+            /><br />
+          </div>
+        </form>
+        <button class="button submit">scan database</button>
+      </div>
+
+      <div class="screen2 hidden">
+        <h1 class="heading">Scanning Databases...</h1>
+        <div id="cssload-wrapper">
+          <div id="cssload-line"></div>
+        </div>
+        <p class="paragraph" id="scanning">
+          Now scanning 0 of 3728 databases... 0 matches found
+        </p>
+        <button class="button hidden" id="btn-ok">OK</button>
+      </div>
+
+      <div class="screen3 hidden">
+        <div class="heading">🎉Congratulations!</div>
+        <div class="paragraph">
+          Your card number did not show up in any hacker’s databases!
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
